@@ -1,0 +1,29 @@
+{
+  "name": "sockshop-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the Sock Shop gateway APIs",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:http": "node dist/server-http.js",
+    "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/server-http.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^5.1.0",
+    "tough-cookie": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^25.5.0",
+    "@types/tough-cookie": "^4.0.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
