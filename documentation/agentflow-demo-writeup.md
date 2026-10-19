@@ -12,7 +12,7 @@ This document captures the demonstrations that prove it.
 
 ### 1. API Assembly Line — Code Generation from PRDs
 
-**What it does:** Takes a Product Requirements Document and produces a complete, production-grade Spring Boot Java codebase through a multi-phase pipeline.
+**What it does:** Takes a Product Requirements Document and produces a complete, structured Spring Boot Java codebase (generated, not yet compiled or tested) through a multi-phase pipeline.
 
 **The pipeline:**
 1. DDD Specification — domain-driven design analysis from the PRD
@@ -31,7 +31,7 @@ This document captures the demonstrations that prove it.
 
 **What it does:** AgentFlow executes a complete PTES-methodology penetration test against OWASP Juice Shop with zero human intervention after initial setup.
 
-**The pipeline (6 phases, ~1.5 hours):**
+**The pipeline (7 phases, about 71 minutes — the clean run, run 10):**
 | Phase | Duration | What Happened |
 |-------|----------|---------------|
 | Phase 0: Setup | ~2 min | Tool inventory, target validation |
@@ -88,7 +88,7 @@ This document captures the demonstrations that prove it.
 #### Phase 1: Codebase Reconnaissance
 - 8 per-service deep-dive analyses (catalogue, carts, orders, user, payment, shipping, frontend, infrastructure)
 - 3 cross-cutting synthesis reports (dependencies, security, performance)
-- Discovered: complete API surface, 16 HTTP dependency edges + RabbitMQ async, data models across 4 databases, 20 security vulnerabilities (5 critical)
+- Discovered: complete API surface, 16 HTTP dependency edges + RabbitMQ async, data models across 4 databases, 22 security vulnerabilities (5 critical)
 
 #### Phase 2: Live API Probes
 - 5 agents probed the running application in parallel
@@ -131,7 +131,7 @@ Built a custom Model Context Protocol server that wraps all Sock Shop gateway AP
 |--------|-------|
 | Documentation produced | 26 reports, 6,880 lines, 320KB |
 | Sprints executed | 7 (across Phases 3-4) |
-| Agent tasks | 17 (Phase 3: 8, Phase 4: 8, MCP test: 1) |
+| Agent tasks (Phases 3–4) | 17 (Phase 3: 8, Phase 4: 8, MCP test: 1) |
 | MCP tools built | 23 |
 | TypeScript source | 1,989 lines across 10 files |
 | Code review tasks | 1 autonomous review, 6 findings (4 High, 2 Medium) |
@@ -174,7 +174,7 @@ That's the gap: not smarter agents, but structured coordination of the ones we a
 
 AgentFlow is domain-agnostic cognitive orchestration. In the demos above, the same platform:
 
-1. **Generated** 19,000 lines of production Java from a PRD
+1. **Generated** 19,000 lines of Java from a PRD (generated, not yet compiled or tested)
 2. **Penetration tested** a web application, finding 16 vulnerabilities including 3 critical (CVSS 9.1-9.8)
 3. **Analysed** codebases with millions of lines (VS Code, Kubernetes, Grafana)
 4. **Built a cognitive intelligence layer** on top of a live microservices application with zero code changes

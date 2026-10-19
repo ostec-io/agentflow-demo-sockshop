@@ -1,6 +1,6 @@
 # Documentation Overview
 
-This directory contains the complete output of AgentFlow's autonomous analysis of the Weaveworks Sock Shop microservices platform. 27 documents produced across 4 phases, totalling over 7,000 lines of analysis.
+This directory contains the complete output of AgentFlow's autonomous analysis of the Weaveworks Sock Shop microservices platform. 26 reports produced across 4 phases (6,880 lines), plus this index and the master write-up.
 
 ## Master Writeup
 

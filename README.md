@@ -1,6 +1,6 @@
 # AgentFlow + Sock Shop: Autonomous Microservices Intelligence
 
-> AgentFlow pointed 7 AI agents at a live 8-service e-commerce platform.
+> AgentFlow pointed 17 AI agents at a live 8-service e-commerce platform.
 > They produced 26 reports, discovered 22 security vulnerabilities,
 > found an unpurchasable product, and built 23 MCP tools —
 > all without changing a single line of Sock Shop code.
@@ -160,7 +160,7 @@ Full parameter reference: [architecture/mcp-tool-reference.md](./architecture/mc
 
 | Metric | Value |
 |--------|-------|
-| Documentation produced | 27 reports, 7,080+ lines |
+| Documentation produced | 26 reports, 6,880 lines |
 | Sprints executed | 7 |
 | Agent tasks tracked | 50 |
 | MCP tools built | 23 |
@@ -191,7 +191,7 @@ agentflow-demo-sockshop/
 │       ├── docker-compose.yml       # Original Sock Shop (14 containers)
 │       └── docker-compose.mcp.yml   # Override: adds MCP server
 │
-├── documentation/                   # All 27 AgentFlow-produced reports
+├── documentation/                   # All 26 AgentFlow-produced reports
 │   ├── overview.md                  # Navigation index
 │   ├── agentflow-demo-writeup.md    # Master writeup
 │   ├── phase1-reconnaissance/       # 11 files — static analysis
@@ -206,7 +206,7 @@ agentflow-demo-sockshop/
 
 ## Documentation Guide
 
-Start with [documentation/overview.md](./documentation/overview.md) for a navigable index of all 27 reports, organized by phase.
+Start with [documentation/overview.md](./documentation/overview.md) for a navigable index of all 26 reports, organized by phase.
 
 Key reads:
 - **The full story**: [documentation/phase3-intelligence/phase3-demo-narrative.md](./documentation/phase3-intelligence/phase3-demo-narrative.md)
@@ -220,7 +220,7 @@ Key reads:
 
 AgentFlow is domain-agnostic cognitive orchestration. The same platform that built this intelligence layer also:
 
-- Generated 19,000 lines of production Java from a PRD ([API Assembly Line](https://github.com/ostec-io/api-assembly-line))
+- Generated 19,000 lines of Java from a PRD (generated, not yet compiled or tested) ([assembly-line-demo](https://github.com/ostec-io/assembly-line-demo))
 - Penetration-tested OWASP Juice Shop, finding 16 vulnerabilities including 3 critical ([agentflow-pentest-juiceshop](https://github.com/ostec-io/agentflow-pentest-juiceshop))
 - Analysed codebases with millions of lines: VS Code, Kubernetes, Grafana, DefinitelyTyped
 
